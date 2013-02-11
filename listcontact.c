@@ -32,7 +32,8 @@ int     main(void) {
                 printf("%s|", sqlite3_column_text(res, 0));
                 printf("%s|", sqlite3_column_text(res, 1));
                 printf("%s|", sqlite3_column_text(res, 2));
-                printf("\n" );
+                printf("%a|", sqlite3_column_text(res, 3));
+	        printf("\n" );
 
                 rec_count++;
         }
